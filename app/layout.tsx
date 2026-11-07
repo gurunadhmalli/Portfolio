@@ -12,7 +12,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://portfolio-coral-mu-17.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Gurunadh Malli — Founding Engineer (FDE)",
   description:
     "Founding Engineer and Forward Deployed Engineer building production Generative AI and Agentic AI systems: multi-agent workflows, advanced RAG and MCP integrations.",
@@ -32,6 +35,13 @@ export const metadata: Metadata = {
     description:
       "Production Generative AI and Agentic AI systems: multi-agent workflows, advanced RAG and MCP integrations.",
     type: "website",
+    url: siteUrl,
+    images: [{ url: "/profile.jpg", width: 1200, height: 1500, alt: "Gurunadh Malli" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gurunadh Malli — Founding Engineer (FDE)",
+    images: ["/profile.jpg"],
   },
 };
 
